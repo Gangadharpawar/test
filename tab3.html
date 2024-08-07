@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <!-- <script src="./js/array.js"></script> -->
+  <!-- <script src="./js/string.js"></script> -->
+  <!-- <script src="./js/object.js"></script> -->
+  <!-- <script src="./js/this.js"></script> -->
+  <!-- <script src="./js/function.js"></script> -->
+  <!-- <link href="./css/menu.css" rel="stylesheet" /> -->
+  <style>
+    
+* {
+  padding: 0;
+  margin:0;
+  box-sizing: border-box;
+}
+.header {
+  background-color:#999191;
+  display: flex;
+  justify-content: space-between;
+}
+ul.menu {
+  display: inline-block;
+}
+  .menu a {
+padding: 10px;
+display: inline-block;
+width:200px;
+text-decoration: none;
+}
+.menu li {
+display: inline;
+font-size: 1.5rem;
+}
+h1.logo:first-letter{
+  color: red;
+}
+label.menu-icon + input[type='checkbox']:checked+.menu {
+  display: none;
+  position: static;
+
+}
+
+label.menu-icon div {
+border: 2px solid black;
+margin-bottom: 5px;
+width: 40px;
+}
+label.menu-icon {
+display: inline-block;
+padding: 10px;
+float: right;
+}
+.menu-icon + input[type="checkbox"] {
+display: none;
+}
+@media screen and (min-width: 769px) {
+label.menu-icon {
+display: none;
+}
+.main-content {
+margin-top: 70px;
+}
+
+ul.menu {
+list-style-type: none;
+text-align: center;
+display: block;
+padding: 0;
+position: static;
+}
+
+.menu a {
+text-decoration: none;
+display: inline-block;
+padding: 10px;
+width: 200px;
+color: #4a4a6b;
+}
+
+.menu a:hover {
+background-color: rgb(244, 241, 241);
+}
+.menu li {
+display: inline;
+font-size: 1.5rem;
+}
+}
+footer.fixed-footer {
+position: fixed;
+left: 2px;
+bottom: 0;
+right: 2px;
+text-align: center;
+font-size: 1.5rem;
+padding: 10px;
+background-color: #cfc6c6;
+}
+
+
+.menudiv {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 53px;
+}
+.menudiv a {
+    text-decoration: none;
+    text-align: center;
+}
+.menudiv ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+.menudiv li {
+    width: 50px;
+    height: 38px;
+    background-color: gray;
+    text-align: center;
+    padding-top: 6px;
+    margin: 1px;
+    border-radius: 6px;
+}
+.menudiv li:hover {
+  background-color: #FF00FF;
+}
+.menudiv li:active {
+    background-color:rgb(227, 234, 29);
+}
+.maincontent {
+    width: 406px;
+    height: 36px;
+    border-radius: 5px;
+    background-color: gray;
+}
+  </style>
+</head>
+<body>
+  <header class="header">
+    <h1 class="logo">Nobel IT</h1>
+    <nav>
+      <label for="menu-icon" class="menu-icon">
+        <div></div>
+        <div></div>
+        <div></div>
+      </label>
+      <input type="checkbox" id="menu-icon" />
+      <ul class="menu">
+        <!-- <button id="btn" class="sbtn" onclick="showmsg()">click Me</button> -->
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html">Product</a></li>
+        <li><a href="index.html">About us </a></li>
+        <li><a href="index.html">Contact us </a></li>
+        <li><a href="index.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div>
+        <div class="menudiv">
+            <ul>
+                <li><a href="./index.html">Tab1</a></li>
+                <li><a href="./tab2.html">Tab2</a></li>
+                <li><a href="./tab3.html">Tab3</a></li>
+            </ul>
+            <div class="maincontent">
+                Tab 3 Content
+            </div>
+        </div>
+</div>
+  <footer class="fixed-footer">&copy 2024 Powered by Nobel IT Company</footer>
+</body>
+
+</html>
